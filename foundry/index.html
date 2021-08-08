@@ -62,20 +62,7 @@
         <!-- /#wrap -->
 
         <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.js"></script>
-        <script type="text/javascript">
-            $(function(){
-                // See if this is a touch device
-                if ('ontouchstart' in window){
-                    // Set the correct body class
-                    $('body').removeClass('no-touch').addClass('touch');
-
-                    // Add the touch toggle to show text
-                    $('div.boxInner img').click(function(){
-                        $(this).closest('.boxInner').toggleClass('touchFocus');
-                    });
-                }
-            });
-        </script>
+        <script type="text/javascript" src="java.js"></script>
 
     </body> 
 </html>
