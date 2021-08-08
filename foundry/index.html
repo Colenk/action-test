@@ -1,0 +1,81 @@
+<!DOCTYPE HTML> 
+<html lang="en-US"> 
+    <head> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">   
+        <title>Foundry Server List</title>
+        <link rel="stylesheet" href="styles.css">
+
+	<!-- Enable media queries for old IE -->
+        <!--[if lt IE 9]>
+            <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+        <![endif]-->
+
+    </head> 
+    <body class="no-touch"> 
+
+        <div class="wrap">
+
+            <!-- Define all of the tiles: -->
+            <div class="box">
+                <div class="boxInner">
+                    <a href="http://kev.mrlilal.com/server1/" >
+                        <img alt="Rime of the Frostmaiden" src="http://mrlilal.com/images/foundry/ice-crop.jpg" />
+                        <div class="titleBox">Enter the Rime of the Frostmaiden!</div>
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="boxInner">
+                    <a href="http://kev.mrlilal.com/server2/" >
+                        <img alt="DND" src="http://mrlilal.com/images/foundry/dnd2.jpg" />
+                        <div class="titleBox">Enter ElatedScroll's Server!</div>
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="boxInner">
+                    <a href="http://kev.mrlilal.com/server3/" >
+                        <img alt="DND" style="padding: 8px 0 2px 0; background: white;" src="http://mrlilal.com/images/foundry/dnd3.png" />
+                        <div class="titleBox">Enter the world of Aldris!</div>
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="boxInner">
+                    <a href="http://kev.mrlilal.com/server4/" >
+                        <img alt="DND" src="http://mrlilal.com/images/foundry/dnd4.jpg" />
+                        <div class="titleBox">Enter Mrlilal's Server!</div>
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="boxInner">
+                    <a href="http://kev.mrlilal.com/server5/" >
+                        <img alt="DND" src="http://mrlilal.com/images/foundry/dnd1.jpg" />
+                        <div class="titleBox">Enter the Dev World!</div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <!-- /#wrap -->
+
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.js"></script>
+        <script type="text/javascript">
+            $(function(){
+                // See if this is a touch device
+                if ('ontouchstart' in window){
+                    // Set the correct body class
+                    $('body').removeClass('no-touch').addClass('touch');
+
+                    // Add the touch toggle to show text
+                    $('div.boxInner img').click(function(){
+                        $(this).closest('.boxInner').toggleClass('touchFocus');
+                    });
+                }
+            });
+        </script>
+
+    </body> 
+</html>
