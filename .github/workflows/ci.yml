@@ -46,4 +46,4 @@ jobs:
       - name: SSH deployment
         run: |
             cd ${{ github.workspace }}
-            rsync -rzv -e ssh foundry/ ${{ secrets.RUSER }}@${{ secrets.RHOST }}:${{ secrets.TARGET }}
+            rsync -rzv foundry/ ${{ secrets.RUSER }}@${{ secrets.RHOST }}:${{ secrets.TARGET }}
